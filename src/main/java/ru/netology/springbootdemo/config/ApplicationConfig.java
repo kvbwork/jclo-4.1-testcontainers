@@ -18,7 +18,7 @@ public class ApplicationConfig {
     }
 
     @Bean
-    @ConditionalOnMissingBean(SystemProfile.class)
+    @ConditionalOnMissingBean
     public SystemProfile prodProfile() {
         return new ProductionProfile();
     }
